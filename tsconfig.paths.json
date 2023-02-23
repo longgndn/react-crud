@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "pages": ["./src/pages"],
+      "@constants": ["./src/constants"],
+      "features/*": ["./src/features/*"],
+      "libs/*": ["./src/libraries/*"],
+      "@common/components/*": ["./src/common/components*"],
+      "@common/components": ["./src/common/components"],
+      "@common/types": ["./src/common/types"],
+      "@common/assets": ["./src/common/assets"]
+    }
+  }
+}
