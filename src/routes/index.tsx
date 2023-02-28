@@ -1,10 +1,10 @@
 import React, { useMemo } from "react";
 import { Routes, Route, useLocation } from "react-router-dom";
-import Product from "../pages/Product";
-import CommonLayout from "../common/components/CommonLayout";
+import Products from "../pages/Products";
 import HomePage from "../pages/HomePage";
 import { useMenuItems } from "./MenuItem";
 import { ROUTES } from "@constants";
+import { CommonLayout } from "@common/components";
 
 const AppRoutes = () => {
   const { items } = useMenuItems();
@@ -17,7 +17,7 @@ const AppRoutes = () => {
     switch (pathName) {
       case ROUTES.HOME:
       case ROUTES.HOME_PAGE:
-      case ROUTES.PRODUCT_PAGE:
+      case ROUTES.PRODUCTS:
       case ROUTES.CATEGORIES_PAGE:
         break;
 
@@ -34,8 +34,8 @@ const AppRoutes = () => {
             <CommonLayout menuItems={items} selectedKeys={selectedKeys || ""} />
           }
         >
-          <Route path={ROUTES.HOME_PAGE} element={<HomePage />} />
-          <Route path={ROUTES.PRODUCT_PAGE} element={<Product />} />
+          <Route path={ROUTES.HOME} element={<HomePage />} />
+          <Route path={ROUTES.PRODUCTS} element={<Products />} />
         </Route>
       </Routes>
     </div>

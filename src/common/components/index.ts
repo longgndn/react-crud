@@ -1,3 +1,4 @@
+export { default as CommonLayout } from "./CommonLayout";
 export { default as Menu } from "./Menu";
 export { default as Table } from "./Table";
 export { default as Loading } from "./Loading";

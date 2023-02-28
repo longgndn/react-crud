@@ -28,3 +28,8 @@ export type IProps = {
   onOk?: any;
   onCancel?: any;
 };
+
+export enum LOCALE {
+  en = "en",
+  vi = "vi",
+}
