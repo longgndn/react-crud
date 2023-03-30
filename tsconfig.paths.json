@@ -10,7 +10,8 @@
       "@common/components/*": ["./src/common/components/*"],
       "@common/locales/*": ["./src/common/locales/*"],
       "@common/types": ["./src/common/types"],
-      "@common/assets": ["./src/common/assets"]
+      "@common/assets": ["./src/common/assets"],
+      "@test": ["src/pages/HomePage/TestRedux/slice"]
     }
   }
 }

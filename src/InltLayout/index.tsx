@@ -8,7 +8,6 @@ import useInltLayout, { Props, ReceivedProps } from "./hook";
 
 const InltLayoutLayout: FC<Props> = ({ children }) => {
   const langue: string = useSelector(langueSelector);
-  console.log("langue", langue);
 
   return (
     <IntlProvider

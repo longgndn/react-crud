@@ -1,8 +1,10 @@
 import langueSlice from "@common/components/NavBar/slice";
 import { combineReducers, configureStore } from "@reduxjs/toolkit";
+import { counterSlice } from "@test";
 
 export const rootReducer = combineReducers({
   [langueSlice.name]: langueSlice.reducer,
+  [counterSlice.name]: counterSlice.reducer,
 });
 
 const store = configureStore({
